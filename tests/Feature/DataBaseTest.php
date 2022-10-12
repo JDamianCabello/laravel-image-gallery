@@ -14,7 +14,7 @@ class DataBaseTest extends TestCase
      */
     public function test_sqliteDB_shouldExist(): void
     {
-        $filename =  database_path()."/database.sqlite";
+        $filename =  database_path() . DIRECTORY_SEPARATOR . "database.sqlite";
         $this->assertFileExists($filename);
     }
 
